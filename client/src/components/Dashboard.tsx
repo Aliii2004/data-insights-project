@@ -51,7 +51,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div style={{ backgroundColor: '#1f2937', borderRadius: '12px', padding: '24px', width: '100%', color: 'white', marginBottom: '20px' }}>
+    <div style={{ backgroundColor: '#1f2937', borderRadius: '12px', padding: '24px', maxWidth: '100%', color: 'white', marginBottom: '20px' }}>
       <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '16px' }}>Database Overview</h2>
       
       {/* Сетка показателей */}
@@ -106,6 +106,14 @@ export default function Dashboard() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
 
 
 // 'use client';
@@ -182,4 +190,4 @@ export default function Dashboard() {
 //       </div>
 //     </div>
 //   );
-// }
+// };
