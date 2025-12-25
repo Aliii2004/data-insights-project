@@ -6,10 +6,10 @@ dotenv.config();
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
-  ssl: {
+  // ssl: {
     // Это говорит Node.js: "Все ок, я доверяю сертификату Render"
-    rejectUnauthorized: false 
-  }
+    // rejectUnauthorized: false 
+  // }
 });
 
 export async function executeQuery(query: string, params?: any[]): Promise<any[]> {
